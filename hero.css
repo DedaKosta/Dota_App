@@ -1,0 +1,472 @@
+body {
+	background-color: #1b2026;
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+#content {
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: #00000033;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5c5c5c;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 70vh;
+    margin-top: 5rem;
+}
+
+.hero-information {
+    width: 40%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hero-main-attribute {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	text-align: center;
+    padding-left: 5rem;
+}
+
+.hero-label {
+    color:white;
+    font-size: large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+    display: block;
+    line-height: 150%;
+    text-align: center;
+    margin-left: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    overflow-y: scroll;
+    max-height: 70%;
+}
+
+.description-label {
+    color: white;
+    width: 50%;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+    line-height: 150%;
+    text-align: left;
+}
+
+.description::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: #00000033;
+}
+
+.description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5c5c5c;
+}
+
+.attack-type {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	text-align: center;
+    margin-top: 3rem;
+    padding-left: 5rem;
+    height: 10%;
+}
+
+.attack-type img {
+    max-height: 50px;
+}
+
+.complexity {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	text-align: center;
+    margin-top: 3rem;
+    padding-left: 5rem;
+    height: 10%;
+}
+
+.complexity img {
+    max-width: 3rem;
+}
+
+.hero-portrait {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-portrait video {
+    max-height: 70vh;
+}
+
+.hero-stats {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.attributes {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hp-mana-stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hp-mana {
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    min-height: 10rem;
+    min-width: 10rem;
+}
+
+.hp {
+    height: 1.5rem;
+    background: linear-gradient(to right, #286323, #7AF03C);
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.mana {
+    height: 1.5rem;
+    background: linear-gradient(to right, #1056DB, #73F5FE);
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.base-gain-stats {
+    width: 35%;
+    height: 100%;
+    min-width: 7rem;
+    max-height: 10rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0.5rem;
+}
+
+.str-gain-stats {
+    height: 100%;
+    max-height: 3.3rem;
+    color: white;
+    font-size: large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.agi-gain-stats {
+    height: 100%;
+    max-height: 3.3rem;
+    color: white;
+    font-size: large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.int-gain-stats {
+    height: 100%;
+    max-height: 3.3rem;
+    color: white;
+    font-size: large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.base-gain-stats div img {
+    max-height: 2rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.attributes-name {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.vertical-line {
+    width: 1%;
+    margin: 1rem 2%;
+}
+
+.roles {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.roles-information {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    color: white;
+}
+
+.role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.role-bar {
+    height: 10%;
+    min-height: 0.5rem;
+    width: 80%;
+    background-color: #4F4F4F;
+    display: flex;
+    flex-direction: row;
+}
+
+.true-values {
+    background-color: white;
+    box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+}
+
+.role-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+
+.roles-name {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.stats-information {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-names {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: white;
+    font-size: large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.stats-values {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    min-height: 100px;
+}
+
+.hero-stats-names {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.stats-name {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+}
+
+.attack {
+    display: flex;
+    flex-direction: column;
+}
+
+.defense {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobility {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-value-label {
+    color: white;
+    font-family: "Radiance", "Noto Sans", sans-serif;
+    text-align: center;
+}
+
+.attack-value {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.attack-value label {
+    text-align: center;
+    line-height: 150%;
+    padding-top: 10px;
+    margin-left: 1rem;
+}
+
+.defense-value {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.defense-value label {
+    text-align: center;
+    line-height: 150%;
+    padding-top: 10px;
+    margin-left: 1rem;
+}
+
+.mobility-value {
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.mobility-value label {
+    text-align: center;
+    line-height: 150%;
+    padding-top: 10px;
+    margin-left: 1rem;
+}
+
+.spell-video-description {
+    width: 80vw;
+    min-width: 700px;
+    height: 40vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.spell-video {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.spell-video video {
+    max-height: 40vh;
+}
+
+.spell-description {
+    width: 50%;
+    background-color: red;
+    height: 100%;
+}
+
+.spell-list {
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.spells {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 2rem 0 5rem 0;
+    padding: 0 5% 0 5%;
+}
+
+.empty-spells {
+    width: 50%;
+}
+
+.spell img {
+    max-height: 8vh;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.selected-spell img {
+    filter: grayscale(0%);
+}
+
+.footer {
+	width: 100vw;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.footer p {
+	color: white;
+	font-size: large;
+	margin-top: 1rem;
+}
+
+hr {
+	width: 80%;
+	background-color: white;
+}
